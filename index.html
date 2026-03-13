@@ -17,11 +17,6 @@
 
 
 
-
-
-
-
-
 </head>
 <body>
 
@@ -30,6 +25,12 @@
 
         <div class="welcome-barra">
             <p>Welcome!</p>
+
+<img id="estrella" src="multimedia/estrella.png" alt="estrella mágica" style="width:50px; cursor:pointer; margin-top:15px;">
+
+
+
+
         </div>
 
         <h1>
@@ -40,16 +41,25 @@
         <p class="subtitulo">★ Consulta programas, requisitos y ubicación de universidades ★</p>
 
 
-
+<audio id="sonidoFlecha" src="multimedia/audio1.wav"></audio>
 
 <p id="reloj"></p>
 
 
+<img class="flecha" src="multimedia/flecha.png" alt="flecha hacia abajo" onclick="siguienteTarjeta(); reproducirFlecha();">
 
 
+<audio id="sonidoEstrella" src="multimedia/audio1.wav"></audio>
 
-
-        <img class="flecha" src="multimedia/flecha.png" alt="flecha hacia abajo" onclick="siguienteTarjeta()">
+<div id="botonFormularios" style="display:none; margin-top:20px; text-align:center;">
+    <p style="margin-bottom:8px; font-weight:bold; font-size:16px;">Formularios:</p>
+    <button onclick="abrirFormularioRegistro()" style="padding:10px 20px; border-radius:10px; background-color:#f57c00; color:white; border:none; cursor:pointer; margin-right:10px;">
+        Registro
+    </button>
+    <button onclick="abrirFormularioConsulta()" style="padding:10px 20px; border-radius:10px; background-color:#f57c00; color:white; border:none; cursor:pointer;">
+        Consulta
+    </button>
+</div>
 
     </div>
 </header>
@@ -525,35 +535,7 @@ Universidad Nacional Autónoma de México
         </p>
     </div>
 
-
-
-<section class="formularios">
-
-<h2>Formularios</h2>
-
-<p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScz2gs6gHPO_nNphBjKR31NCkSFLuXSVfPWf1D1l3UWBh3P1w/viewform?usp=dialog" target="_blank">
-Formulario de Registro
-</a>
-</p>
-
-<p>
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSfqkZfb1YsV2poR7bdHJN9oWf7vbMkCXuMk4SIW8EmZ8Ycenw/viewform?usp=dialog" target="_blank">
-Formulario de Consulta
-</a>
-</p>
-
 </section>
-
-
-
-</section>
-
-
-
-
-
-
 
 
 <script>
@@ -590,10 +572,44 @@ function actualizarReloj() {
 setInterval(actualizarReloj, 1000);
 
 
+function reproducirFlecha() {
+    const audio = document.getElementById("sonidoFlecha");
+    audio.currentTime = 0; 
+    audio.play();
+}
+
+
+
+const estrella = document.getElementById("estrella");
+const audioEstrella = document.getElementById("sonidoEstrella");
+const botonFormularios = document.getElementById("botonFormularios");
+
+estrella.addEventListener("click", function() {
+    
+    audioEstrella.currentTime = 0;
+    audioEstrella.play();
+
+    
+    botonFormularios.style.display = "block";
+});
+
+
+function abrirFormularioRegistro() {
+    window.open(
+        "https://docs.google.com/forms/d/e/1FAIpQLScz2gs6gHPO_nNphBjKR31NCkSFLuXSVfPWf1D1l3UWBh3P1w/viewform?usp=header",
+    );
+}
+
+function abrirFormularioConsulta() {
+    window.open(
+        "https://docs.google.com/forms/d/e/1FAIpQLSfqkZfb1YsV2poR7bdHJN9oWf7vbMkCXuMk4SIW8EmZ8Ycenw/viewform?usp=dialog",
+        "_blank"
+    );
+}
+
+
 
 </script>
 
 </body>
-
 </html>
-
