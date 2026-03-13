@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Universidades en Línea</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Ranchers&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+<header class="hero">
+     <div class="cuadro">
+
+        <div class="welcome-barra">
+            <p>Welcome!</p>
+        </div>
+
+        <h1>
+            Explorador de Universidades<br>
+            en Línea
+        </h1>
+
+        <p class="subtitulo">★ Consulta programas, requisitos y ubicación de universidades ★</p>
+
+
+
+
+<p id="reloj"></p>
+
+
+
+
+
+
+        <img class="flecha" src="multimedia/flecha.png" alt="flecha hacia abajo" onclick="siguienteTarjeta()">
+
+    </div>
+</header>
+
+<!--tarjeta 1-->
+<section class="tarjetas" id="seccion-tarjetas" style="display: none;">
+
+
+<button class="volver" onclick="volverInicio()">Volver inicio</button>
+
+
+    <header class="encabezado-universidades">
+    <h2>Universidades de México</h2>
+
+</header>
+
+
+
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/logo1.png" alt="Logo Universidad 1">
+            <h3>
+<a href="https://www.unam.mx/" target="_blank">
+Universidad Nacional Autónoma de México
+</a>
+</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus.1.jpg" alt="Biblioteca Central UNAM">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus1.1.jpg" alt="Vista aérea UNAM">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Pública</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Ciencias Físico-Matemáticas e Ingenierías</p>
+        <p class="area-linea">Ciencias Biológicas y de la Salud</p>
+        <p class="area-linea">Ciencias Sociales</p>
+        <p class="area-linea">Humanidades y Artes</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://www.google.com/maps/search/Universidad+Nacional+Autónoma+de+México+Ciudad+Universitaria+CDMX" target="_blank" rel="noopener noreferrer">
+                Campus Ciudad Universitaria, CDMX
+            </a>
+        </p>
+    </div>
+
+
+<!--tarjeta 2-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo2.png" alt="Logo Universidad 2">
+            <h3>Instituto Politécnico Nacional</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus2.jpeg" alt="Biblioteca Central IPN">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus2.2.jpeg" alt="Vista aérea IPN">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Pública</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Ingeniería y Ciencias Físico Matemáticas</p>
+        <p class="area-linea">Ciencias Médico Biológicas</p>
+        <p class="area-linea">Ciencias Socieles y Administrativas</p>
+        
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://maps.app.goo.gl/BvGetLLdbLvFM9GT6" target="_blank" rel="noopener noreferrer">
+                Unidad Profesional Zacatenco
+            </a>
+        </p>
+    </div>
+
+
+<!--tarjeta 3-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo3.png" alt="Logo Universidad 3">
+            <h3>Tecnológico de Monterrey</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus3.jpeg" alt="Biblioteca Central ITESM">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus3.3.jpeg" alt="Vista aérea ITESM">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Privada</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Escuela de Ingeniería y Ciencias</p>
+        <p class="area-linea">Escuela de negocios</p>
+        <p class="area-linea">Escuela de Ciencias Sociales y Gobierno</p>
+        <p class="area-linea">Escuela de Arquitectura, Arte y Diseño</p>
+        <p class="area-linea">Escuela de Humanidades y Educación</p>
+        <p class="area-linea">Escuela de Medicina y Ciencias de Salud</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://www.google.com/maps/search/Tecnológico+de+Monterrey+Campus+Monterrey" target="_blank" rel="noopener noreferrer">
+                Campus Monterrey
+            </a>
+        </p>
+    </div>
+
+<!--tarjeta 4-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/logo4.jpeg" alt="Logo Universidad 4">
+            <h3>Universidad Autónoma Metropolitana</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus4.4.jpeg" alt="Biblioteca Central UAM">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus4.jpeg" alt="Vista aérea UAM">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Pública</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Ciencias y Artes para el Diseño </p>
+        <p class="area-linea">ECiencias Básicas e Ingeniería </p>
+        <p class="area-linea">Ciencias Biológicas y de la Salud </p>
+        <p class="area-linea">Ciencias de la Comunicación y Diseño </p>
+        <p class="area-linea">Ciencias Naturales e Ingeniería </p>
+        <p class="area-linea">Ciencias Sociales y Humanidades</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://maps.app.goo.gl/g7mKd5u4wNfabF9P9" target="_blank" rel="noopener noreferrer">
+                Campus Universitaria UAM
+            </a>
+        </p>
+    </div>
+
+    <!--tarjeta 5-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo5.jpeg" alt="Logo Universidad 5">
+            <h3>Universidad de Guadalajara</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus5.jpeg" alt="Biblioteca Central UDG">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus5.5.jpeg" alt="Vista aérea UDG">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Pública</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Salud (CUCS)</p>
+        <p class="area-linea">Ingenierías y Ciencias</p>
+        <p class="area-linea">Económico-Administrativas</p>
+        <p class="area-linea">Sociales y Humanidades</p>
+        <p class="area-linea">Arte y Diseño</p>
+        
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://maps.app.goo.gl/TLRiuAmdzynRVcXj7" target="_blank" rel="noopener noreferrer">
+                Ciudad Universitaria, Guadalajara
+            </a>
+        </p>
+    </div>
+
+
+<!--tarjeta 6-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo6.png" alt="Logo Universidad 6">
+            <h3>Benemérita Universidad Autónoma de Puebla</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus6.jpeg" alt="Biblioteca Central BUAP">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus6.6.jpeg" alt="Vista aérea BUAP">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Pública</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Ciencias Naturales y de la Salud</p>
+        <p class="area-linea">Ingeniería y Ciencias Exactas</p>
+        <p class="area-linea">Ciencias Sociales y Humanidades</p>
+        <p class="area-linea">Económico-Administrativas</p>
+        <p class="area-linea">Artes y Comunicación</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://maps.app.goo.gl/Mra81PBWVJqdq2vu5" target="_blank" rel="noopener noreferrer">
+                Ciudad Universitaria BUAP, Puebla
+            </a>
+        </p>
+    </div>
+
+<!--tarjeta 7-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo7.webp" alt="Logo Universidad 7">
+            <h3>Universidad Iberoamericana</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus7.jpeg" alt="Biblioteca Central BUAP">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus7.7.jpeg" alt="Vista aérea BUAP">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Privada</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Diseño, Comunicación y Artes</p>
+        <p class="area-linea">Ingeniería</p>
+        <p class="area-linea">Negocios y Economía</p>
+        <p class="area-linea">Salud, Derecho y Humanidades</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://maps.app.goo.gl/zZk8dPsuQFRm6pjK9" target="_blank" rel="noopener noreferrer">
+                Campus Santa Fe, CDMX
+            </a>
+        </p>
+    </div>
+
+
+<!--tarjeta 8-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo8.png" alt="Logo Universidad 8">
+            <h3>Universidad Autónoma de Nuevo León</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus8.jpeg" alt="Biblioteca Central UANL">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus8.8.jpeg" alt="Vista aérea UANL">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Pública</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Ingeniería y Tecnología</p>
+        <p class="area-linea">Salud</p>
+        <p class="area-linea">Sociales y Humanidades</p>
+        <p class="area-linea">Administración</p>
+        <p class="area-linea">Ciencias Agropecuarias</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://maps.app.goo.gl/43YjyMVboKBihtp67" target="_blank" rel="noopener noreferrer">
+                Campus Ciudad Universitaria, Monterrey
+            </a>
+        </p>
+    </div>
+
+<!--tarjeta 9-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo9.png" alt="Logo Universidad 9">
+            <h3>Universidad Anáhuac</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus9.jpeg" alt="Biblioteca Central">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus9.9.jpeg" alt="Vista aérea">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Privada</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Negocios y Finanzas</p>
+        <p class="area-linea">Ingenierías y Ciencia de Datos</p>
+        <p class="area-linea">Salud</p>
+        <p class="area-linea">Comunicación, Diseño y Turismo</p>
+        <p class="area-linea">Derecho</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://www.google.com/maps/search/Universidad+Anáhuac+Campus+Norte+CDMX" target="_blank" rel="noopener noreferrer">
+                Campus Norte, CDMX
+            </a>
+        </p>
+    </div>
+
+<!--tarjeta 10-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo10.png" alt="Logo Universidad 10">
+            <h3>Universidad Veracruzana</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus10.jpeg" alt="Biblioteca Central UV">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus10.10.jpeg" alt="Vista aérea UV">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Pública</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Ciencias de la Salud</p>
+        <p class="area-linea">Técnica (Ingenierías y Arquitectura)</p>
+        <p class="area-linea">Económico-Administrativa</p>
+        <p class="area-linea">Humanidades</p>
+        <p class="area-linea">Biología Marina</p>
+        <p class="area-linea">Agroecología</p>
+        <p class="area-linea">Artes</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://maps.app.goo.gl/wDcJdVRLmMzShLND8" target="_blank" rel="noopener noreferrer">
+                Ciudad Universitaria, Xalapa
+            </a>
+        </p>
+    </div>
+
+<!--tarjeta 11-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo11.png" alt="Logo Universidad 11">
+            <h3>Universidad La Salle</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus11.jpeg" alt="Biblioteca Central">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central.2.1</p>
+                <img class="campus" src="multimedia/campus11.11.jpeg" alt="Biblioteca Central 2.1">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Privada</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Negocios</p>
+        <p class="area-linea">Arquitectura y Diseño</p>
+        <p class="area-linea">Derecho y Relaciones Internacionales</p>
+        <p class="area-linea">Humanidades</p>
+        <p class="area-linea">Ingeniería</p>
+        <p class="area-linea">Salud</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://maps.app.goo.gl/YBQyeVV2nD9ozoLf8" target="_blank" rel="noopener noreferrer">
+                Campus Condesa, CDMX
+            </a>
+        </p>
+    </div>
+
+
+<!--tarjeta 12-->
+
+    <div class="tarjeta">
+
+        <div class="encabezado">
+            <img class="logo" src="multimedia/Logo12.png" alt="Logo Universidad 12">
+            <h3>Universidad Autónoma de Querétaro</h3>
+        </div>
+
+        <div class="campus-container">
+            <div class="campus-box">
+                <p class="campus-title">Biblioteca Central</p>
+                <img class="campus" src="multimedia/campus12.jpeg" alt="Biblioteca Central UAQ">
+            </div>
+
+            <div class="campus-box">
+                <p class="campus-title">Vista aérea del campus</p>
+                <img class="campus" src="multimedia/campus12.12.jpeg" alt="Vista aérea UAQ">
+            </div>
+        </div>
+
+        <p><strong>Categoría:</strong> Pública</p>
+        <p><strong>Programas académicos principales:</strong></p>
+        <p class="area-linea">Ingeniería</p>
+        <p class="area-linea">Medicina y Ciencias de la Salud</p>
+        <p class="area-linea">Derecho y Ciencias Sociales</p>
+        <p class="area-linea">Contaduría y Administración</p>
+        <p class="area-linea">Psicología y Educación</p>
+        <p class="area-linea">Ciencias Naturales</p>
+        <p class="area-linea">Artes, Filosofía y Humanidades</p>
+
+        <p class="ubicacion">
+            <strong>UBICACIÓN:</strong>
+            <a href="https://maps.app.goo.gl/CyePRPQwvDEC325R7" target="_blank" rel="noopener noreferrer">
+                Campus Centro Universitario, Querétaro
+            </a>
+        </p>
+    </div>
+
+
+
+<section class="formularios">
+
+<h2>Formularios</h2>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScz2gs6gHPO_nNphBjKR31NCkSFLuXSVfPWf1D1l3UWBh3P1w/viewform?usp=dialog" target="_blank">
+Formulario de Registro
+</a>
+</p>
+
+<p>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfqkZfb1YsV2poR7bdHJN9oWf7vbMkCXuMk4SIW8EmZ8Ycenw/viewform?usp=dialog" target="_blank">
+Formulario de Consulta
+</a>
+</p>
+
+</section>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<script>
+
+function siguienteTarjeta() {
+    // Oculta la portada
+    document.querySelector('.hero').style.display = 'none';
+
+    // Muestra la sección de tarjetas
+    document.getElementById('seccion-tarjetas').style.display = 'grid';
+}
+
+function volverInicio() {
+    // Oculta las tarjetas
+    document.getElementById('seccion-tarjetas').style.display = 'none';
+
+    // Muestra otra vez la portada
+    document.querySelector('.hero').style.display = 'flex';
+}
+
+
+function actualizarReloj() {
+    const ahora = new Date();
+
+    const horas = ahora.getHours().toString().padStart(2,'0');
+    const minutos = ahora.getMinutes().toString().padStart(2,'0');
+    const segundos = ahora.getSeconds().toString().padStart(2,'0');
+
+    const horaActual = horas + ":" + minutos + ":" + segundos;
+
+    document.getElementById("reloj").textContent = horaActual;
+}
+
+setInterval(actualizarReloj, 1000);
+
+
+
+</script>
+
+</body>
+</html>

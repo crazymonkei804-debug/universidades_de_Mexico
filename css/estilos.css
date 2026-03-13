@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../multimedia/cuadro\ fondo.jpeg"); 
+    background-size: cover;
+    background-position: center;
+}
+
+.cuadro {
+    width: 80%;
+    max-width: 900px;
+    background-color: white;
+    border: 3px solid rgb(44, 44, 54);
+    border-radius: 15px;
+    text-align: center;
+    padding: 135px 50px 50px 50px; 
+    position: relative;
+}
+
+.welcome-barra {
+    position: absolute;
+    top: 0;
+    left: 0px;                
+    width: calc(100% - 14px);   
+    height: 120px; 
+    background-color: #30232A;
+    display: flex;
+    align-items: center;        
+    justify-content: flex-start; 
+    padding-left: 15px;         
+    border-radius: 15px 15px 0 0;
+}
+
+.welcome-barra p {
+    font-family: 'Niconne', cursive; 
+    font-size: 60px;                  
+    color: white;
+    margin: 0;
+}
+
+
+h1 {
+    color: #FAB637;
+    font-size: 42px;
+    margin: 50px 0 20px 0;
+    text-align: center;
+    font-family: 'Ranchers', 'Niconne', cursive;
+}
+
+
+.subtitulo {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.flecha {
+    width: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+@media (max-width: 600px) {
+    .cuadro {
+        width: 90%;
+        padding: 100px 25px 25px 25px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .subtitulo {
+        font-size: 16px;
+    }
+
+    .flecha {
+        width: 35px;
+    }
+
+    .welcome-barra p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+.encabezado-universidades{
+    width: 100%;
+    background-color: #ecb82c;
+    text-align: center;
+    padding: 25px 0;
+    grid-column: 1 / -1;
+}
+
+.encabezado-universidades h2{
+    font-family: 'Ranchers', cursive;
+    font-size: 40px;
+    color: #000000;
+    margin: 0;
+}
+
+
+.volver{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    background-color: #f57c00;
+    color: white;
+
+    border: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s ease;
+
+
+
+
+}
+.volver:hover{
+    transform: scale(1.1);
+    background-color: #a52a2a;
+}
+
+
+
+#seccion-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    padding: 40px;
+    background-color: #ffebc1;
+}
+
+
+.tarjeta {
+    background-color: #fdfaf7;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.encabezado a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.encabezado a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.tarjeta:hover {
+    transform: scale(1.03);
+}
+
+.tarjeta h3 {
+    color: #30232A;
+    margin: 10px 0;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.campus {
+    width: 90%;        
+    max-width: 400px;  
+    border-radius: 10px;
+    
+}
+
+.campus-container {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;               
+    flex-wrap: wrap;          
+}
+
+.campus-box {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+}
+
+.campus-container .campus {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+
+
+.tarjeta p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.tarjeta p strong {
+    display: block;
+    margin-top: 10px;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 15px;
+}
+
+.encabezado h3 {
+    margin: 0; 
+}
+
+.logo {
+    width: 60px; 
+    margin-bottom: 0; 
+}
+
+.formularios{
+display:block;
+margin-top:40px;
+}
