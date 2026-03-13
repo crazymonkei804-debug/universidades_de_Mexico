@@ -3,6 +3,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
+body{
+cursor: url("../multimedia/cursor.png") 16 16, auto;
+}
+
 .hero {
     height: 100vh;
     display: flex;
@@ -37,6 +42,8 @@ body {
     padding-left: 15px;         
     border-radius: 15px 15px 0 0;
 }
+
+
 
 .welcome-barra p {
     font-family: 'Niconne', cursive; 
@@ -245,4 +252,16 @@ h1 {
 .formularios{
 display:block;
 margin-top:40px;
+}
+
+
+
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(15deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#estrella {
+    animation: girar 2s infinite ease-in-out;
 }
