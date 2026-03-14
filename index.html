@@ -62,7 +62,93 @@
 </div>
 
     </div>
+
+
+<!-- Formulario de consulta -->
+<div id="formularioConsulta" style="display:none;" class="formulario-box">
+
+<h2>Consulta de programas</h2>
+
+<form>
+
+<label for="programa">Programa académico:</label>
+
+<select id="programa">
+
+<option value="Ingeniería">Ingeniería y Tecnología</option>
+
+<option value="Salud">Ciencias de la Salud / Medicina</option>
+
+<option value="Ciencias Sociales">Ciencias Sociales</option>
+
+<option value="Humanidades">Humanidades</option>
+
+<option value="Administración">Administración / Negocios</option>
+
+<option value="Arquitectura">Arquitectura y Diseño</option>
+
+<option value="Comunicación">Comunicación</option>
+
+<option value="Artes">Artes</option>
+
+<option value="Ciencias Naturales">Ciencias Naturales</option>
+
+<option value="Economía">Economía / Finanzas</option>
+
+<option value="Derecho">Derecho</option>
+
+<option value="Educación">Educación / Psicología</option>
+
+<option value="Biología">Biología / Agroecología</option>
+
+<option value="Datos">Ciencia de Datos / Informática</option>
+
+</select>
+
+<label for="costo">Costo máximo:</label>
+
+<select id="costo">
+
+<option value="Pública">Pública (bajo costo)</option>
+
+<option value="Privada">Privada (alto costo)</option>
+
+</select>
+
+<label for="requisitos">Requisitos:</label>
+
+<select id="requisitos">
+
+<option value="Examen de admisión">Examen de admisión</option>
+
+<option value="Promedio mínimo">Promedio mínimo</option>
+
+<option value="Entrevista">Entrevista</option>
+
+</select>
+
+<br><br>
+
+<button type="button" onclick="buscarUniversidad()">
+Buscar
+</button>
+
+</form>
+
+<div id="resultados" style="margin-top:20px;">
+<p>Buscando...</p>
+</div>
+
+<button onclick="cerrarFormularioConsulta()" style="margin-top:15px;">
+Cerrar
+</button>
+
+</div>
+
+
 </header>
+
+
 
 <!--tarjeta 1-->
 <section class="tarjetas" id="seccion-tarjetas" style="display: none;">
@@ -83,6 +169,7 @@
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo1.png" alt="Logo Universidad 1">
+
             <h3>
 <a href="https://www.unam.mx/" target="_blank">
 Universidad Nacional Autónoma de México
@@ -98,7 +185,7 @@ Universidad Nacional Autónoma de México
 
             <div class="campus-box">
                 <p class="campus-title">Vista aérea del campus</p>
-                <img class="campus" src="multimedia/campus1.1.jpg" alt="Vista aérea UNAM">
+               <img class="campus" src="multimedia/campus1.1.jpg" alt="Vista aérea UNAM">
             </div>
         </div>
 
@@ -111,10 +198,13 @@ Universidad Nacional Autónoma de México
 
         <p class="ubicacion">
             <strong>UBICACIÓN:</strong>
-            <a href="https://www.google.com/maps/search/Universidad+Nacional+Autónoma+de+México+Ciudad+Universitaria+CDMX" target="_blank" rel="noopener noreferrer">
+            <a href="https://maps.app.goo.gl/VmjTGNJRUgtQr1Eu9" target="_blank" rel="noopener noreferrer">
                 Campus Ciudad Universitaria, CDMX
             </a>
         </p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15059.355665918403!2d-99.2066647!3d19.332795!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce00071fca0bad%3A0x9989fa5b4f526717!2sUniversidad%20Nacional%20Aut%C3%B3noma%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1773437954818!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </div>
 
 
@@ -124,7 +214,15 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo2.png" alt="Logo Universidad 2">
-            <h3>Instituto Politécnico Nacional</h3>
+
+
+            <h3>
+<a href="https://www.ipn.mx/" target="_blank">
+Instituto Politécnico Nacional
+</a>
+</h3>
+
+
         </div>
 
         <div class="campus-container">
@@ -152,6 +250,9 @@ Universidad Nacional Autónoma de México
                 Unidad Profesional Zacatenco
             </a>
         </p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30087.40111508761!2d-99.1708935!3d19.5018563!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9b5d8c54c1b%3A0x954022f561b19ac8!2sINSTITUTO%20POLIT%C3%89CNICO%20NACIONAL!5e0!3m2!1ses!2smx!4v1773438215138!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </div>
 
 
@@ -161,7 +262,13 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo3.png" alt="Logo Universidad 3">
-            <h3>Tecnológico de Monterrey</h3>
+
+
+            <h3>
+<a href="https://www.tec.mx/" target="_blank">
+Tecnológico de Monterrey
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -191,6 +298,8 @@ Universidad Nacional Autónoma de México
                 Campus Monterrey
             </a>
         </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.5949686548156!2d-100.28954!3d25.6515649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662bfcee61c0709%3A0xab5b4cc298e6fe08!2sTecnol%C3%B3gico%20de%20Monterrey!5e0!3m2!1ses!2smx!4v1773438265954!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 <!--tarjeta 4-->
@@ -199,7 +308,11 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/logo4.jpeg" alt="Logo Universidad 4">
-            <h3>Universidad Autónoma Metropolitana</h3>
+            <h3>
+<a href="https://www.uam.mx/" target="_blank">
+Universidad Autónoma Metropolitana
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -229,7 +342,10 @@ Universidad Nacional Autónoma de México
                 Campus Universitaria UAM
             </a>
         </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3765.4150546058536!2d-99.102194!3d19.3077877!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01860237f63d%3A0x409a85db2e1a657b!2sUniversidad%20Aut%C3%B3noma%20Metropolitana%20Unidad%20Xochimilco!5e0!3m2!1ses!2smx!4v1773438307625!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+
 
     <!--tarjeta 5-->
 
@@ -237,7 +353,11 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo5.jpeg" alt="Logo Universidad 5">
-            <h3>Universidad de Guadalajara</h3>
+           <h3>
+<a href="https://www.udg.mx/" target="_blank">
+Universidad de Guadalajara
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -267,6 +387,8 @@ Universidad Nacional Autónoma de México
                 Ciudad Universitaria, Guadalajara
             </a>
         </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7644889.378815961!2d-103.3589544!3d20.6754309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae02a134cc1f%3A0xfd48543faef734ac!2sUniversidad%20de%20Guadalajara!5e0!3m2!1ses!2smx!4v1773438359264!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 
@@ -276,7 +398,11 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo6.png" alt="Logo Universidad 6">
-            <h3>Benemérita Universidad Autónoma de Puebla</h3>
+           <h3>
+<a href="https://www.buap.mx/" target="_blank">
+Benemérita Universidad Autónoma de Puebla
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -305,6 +431,8 @@ Universidad Nacional Autónoma de México
                 Ciudad Universitaria BUAP, Puebla
             </a>
         </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d965502.3301201557!2d-98.1951251!3d19.042029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfbf6694969347%3A0x94b7bdad22f8545a!2sBenem%C3%A9rita%20Universidad%20Aut%C3%B3noma%20de%20Puebla!5e0!3m2!1ses!2smx!4v1773438388446!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 <!--tarjeta 7-->
@@ -313,7 +441,11 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo7.webp" alt="Logo Universidad 7">
-            <h3>Universidad Iberoamericana</h3>
+           <h3>
+<a href="https://ibero.mx/" target="_blank">
+Universidad Iberoamericana
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -341,6 +473,8 @@ Universidad Nacional Autónoma de México
                 Campus Santa Fe, CDMX
             </a>
         </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d963582.4951795943!2d-100.4834981!3d19.3694072!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d200db00f55383%3A0x31d84ccbb5acaf18!2sUniversidad%20Iberoamericana%20Ciudad%20de%20M%C3%A9xico!5e0!3m2!1ses!2smx!4v1773438419206!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 
@@ -350,7 +484,11 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo8.png" alt="Logo Universidad 8">
-            <h3>Universidad Autónoma de Nuevo León</h3>
+            <h3>
+<a href="https://www.uanl.mx/" target="_blank">
+Universidad Autónoma de Nuevo León
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -379,6 +517,8 @@ Universidad Nacional Autónoma de México
                 Campus Ciudad Universitaria, Monterrey
             </a>
         </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.3358161557985!2d-100.3119038!3d25.726406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662945396e136af%3A0x742b1e8288ee57a8!2sUniversidad%20Aut%C3%B3noma%20de%20Nuevo%20Le%C3%B3n!5e0!3m2!1ses!2smx!4v1773438451685!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 <!--tarjeta 9-->
@@ -387,7 +527,11 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo9.png" alt="Logo Universidad 9">
-            <h3>Universidad Anáhuac</h3>
+           <h3>
+<a href="https://www.anahuac.mx/" target="_blank">
+Universidad Anáhuac
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -416,6 +560,7 @@ Universidad Nacional Autónoma de México
                 Campus Norte, CDMX
             </a>
         </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.2336625512653!2d-99.2621068!3d19.4023076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d20138891b3483%3A0xfc7f5357ee925110!2sUniversidad%20An%C3%A1huac%20M%C3%A9xico%20Campus%20Norte!5e0!3m2!1ses!2smx!4v1773438478882!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 <!--tarjeta 10-->
@@ -424,7 +569,11 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo10.png" alt="Logo Universidad 10">
-            <h3>Universidad Veracruzana</h3>
+           <h3>
+<a href="https://www.uv.mx/" target="_blank">
+Universidad Veracruzana
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -455,6 +604,7 @@ Universidad Nacional Autónoma de México
                 Ciudad Universitaria, Xalapa
             </a>
         </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d962690.8749175073!2d-98.1368211!3d19.5196534!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85db323e3fffffff%3A0x3a3a239fd87992c9!2sUniversidad%20Veracruzana!5e0!3m2!1ses!2smx!4v1773438507464!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 <!--tarjeta 11-->
@@ -463,7 +613,11 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo11.png" alt="Logo Universidad 11">
-            <h3>Universidad La Salle</h3>
+           <h3>
+<a href="https://www.lasalle.mx/" target="_blank">
+Universidad La Salle
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -493,6 +647,8 @@ Universidad Nacional Autónoma de México
                 Campus Condesa, CDMX
             </a>
         </p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d963349.5861276238!2d-99.1812573!3d19.4087624!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff677c17d139%3A0x3108b5797f9c9ecd!2sUniversidad%20La%20Salle!5e0!3m2!1ses!2smx!4v1773438532388!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 
@@ -502,7 +658,11 @@ Universidad Nacional Autónoma de México
 
         <div class="encabezado">
             <img class="logo" src="multimedia/Logo12.png" alt="Logo Universidad 12">
-            <h3>Universidad Autónoma de Querétaro</h3>
+            <h3>
+<a href="https://www.uaq.mx/" target="_blank">
+Universidad Autónoma de Querétaro
+</a>
+</h3>
         </div>
 
         <div class="campus-container">
@@ -533,83 +693,13 @@ Universidad Nacional Autónoma de México
                 Campus Centro Universitario, Querétaro
             </a>
         </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d238849.6148096351!2d-100.7505516!3d20.7092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d35acbc1932d3b%3A0x9812e24009d961c5!2sUniversidad%20Aut%C3%B3noma%20de%20Quer%C3%A9taro!5e0!3m2!1ses!2smx!4v1773438559420!5m2!1ses!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
 </section>
 
 
-<script>
-
-function siguienteTarjeta() {
-    // Oculta la portada
-    document.querySelector('.hero').style.display = 'none';
-
-    // Muestra la sección de tarjetas
-    document.getElementById('seccion-tarjetas').style.display = 'grid';
-}
-
-function volverInicio() {
-    // Oculta las tarjetas
-    document.getElementById('seccion-tarjetas').style.display = 'none';
-
-    // Muestra otra vez la portada
-    document.querySelector('.hero').style.display = 'flex';
-}
-
-
-function actualizarReloj() {
-    const ahora = new Date();
-
-    const horas = ahora.getHours().toString().padStart(2,'0');
-    const minutos = ahora.getMinutes().toString().padStart(2,'0');
-    const segundos = ahora.getSeconds().toString().padStart(2,'0');
-
-    const horaActual = horas + ":" + minutos + ":" + segundos;
-
-    document.getElementById("reloj").textContent = horaActual;
-}
-
-setInterval(actualizarReloj, 1000);
-
-
-function reproducirFlecha() {
-    const audio = document.getElementById("sonidoFlecha");
-    audio.currentTime = 0; 
-    audio.play();
-}
-
-
-
-const estrella = document.getElementById("estrella");
-const audioEstrella = document.getElementById("sonidoEstrella");
-const botonFormularios = document.getElementById("botonFormularios");
-
-estrella.addEventListener("click", function() {
-    
-    audioEstrella.currentTime = 0;
-    audioEstrella.play();
-
-    
-    botonFormularios.style.display = "block";
-});
-
-
-function abrirFormularioRegistro() {
-    window.open(
-        "https://docs.google.com/forms/d/e/1FAIpQLScz2gs6gHPO_nNphBjKR31NCkSFLuXSVfPWf1D1l3UWBh3P1w/viewform?usp=header",
-    );
-}
-
-function abrirFormularioConsulta() {
-    window.open(
-        "https://docs.google.com/forms/d/e/1FAIpQLSfqkZfb1YsV2poR7bdHJN9oWf7vbMkCXuMk4SIW8EmZ8Ycenw/viewform?usp=dialog",
-        "_blank"
-    );
-}
-
-
-
-</script>
+<script src="js/app.js"></script>
 
 </body>
 </html>
