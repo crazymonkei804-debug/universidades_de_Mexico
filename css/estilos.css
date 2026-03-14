@@ -265,3 +265,58 @@ margin-top:40px;
 #estrella {
     animation: girar 2s infinite ease-in-out;
 }
+
+.formulario-box{
+
+background-color:white;
+width:350px;
+padding:20px;
+margin:20px auto;
+border-radius:15px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-align:center;
+
+}
+
+.formulario-box h2{
+
+color:#f57c00;
+margin-bottom:15px;
+
+}
+
+.formulario-box label{
+
+display:block;
+margin-top:10px;
+font-weight:bold;
+
+}
+
+.formulario-box select{
+
+width:90%;
+padding:8px;
+margin-top:5px;
+border-radius:8px;
+border:1px solid #ccc;
+
+}
+
+.formulario-box button{
+
+margin-top:15px;
+padding:10px 15px;
+border-radius:10px;
+border:none;
+background-color:#f57c00;
+color:white;
+cursor:pointer;
+
+}
+
+.formulario-box button:hover{
+
+background-color:#e65100;
+
+}
