@@ -214,3 +214,31 @@ document.getElementById("resultados").innerHTML=
 "<p><strong>Universidades encontradas:</strong><br>"+resultados+"</p>";
 
 }
+
+
+
+let moving = false;
+
+const frog = document.getElementById("frog");
+const music = document.getElementById("frogMusic");
+
+frog.addEventListener("click", function() {
+
+  if (moving === false) {
+
+    frog.src = "multimedia/rana-moviendo.gif";
+    music.play();
+
+    moving = true;
+
+  } else {
+
+    frog.src = "multimedia/rana-quieta.gif";
+    music.pause();
+    music.currentTime = 0;
+
+    moving = false;
+
+  }
+
+});
