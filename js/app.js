@@ -15,6 +15,36 @@ function volverInicio() {
 }
 
 
+
+
+
+
+function mostrarGaleria() {
+
+let galeria = document.getElementById("galeria");
+
+if (galeria.style.display === "block") {
+
+galeria.style.display = "none";
+
+} else {
+
+galeria.style.display = "block";
+
+galeria.scrollIntoView({
+behavior: "smooth"
+});
+
+}
+}
+
+
+
+
+
+
+
+
 function actualizarReloj() {
     const ahora = new Date();
 
@@ -214,8 +244,6 @@ document.getElementById("resultados").innerHTML=
 "<p><strong>Universidades encontradas:</strong><br>"+resultados+"</p>";
 
 }
-
-
 
 let moving = false;
 
